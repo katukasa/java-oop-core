@@ -2,6 +2,7 @@ package ru.geekbrains.java_core.homework1;
 
 public interface IMove {
 
-    void run();
-    void jump();
+    void jump(int heigth);
+    void run(int length);
+
 }
