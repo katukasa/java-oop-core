@@ -12,20 +12,23 @@ public class Human implements IMove {
     }
 
     @Override
-    public void jump(int height) {
-        if (maxJump >= height) {
-            System.out.println("Человек " + name + " перепрыгнул через стену высотой " + height + " м.");
-        }
-        else System.out.println("Человек " + name + " не смог перепрыгнуть через стену высотой " + height + " м.");
-
+    public void jump(int size) {
+        System.out.print ("Человек " + name + " прыгает через стену высотой " + size + " м. ");
     }
 
     @Override
-    public void run(int length) {
-        if (maxRun >= length) {
-            System.out.println("Человек " + name + " пробежал дистанцию длиной " + length + " м.");
-        }
-        else System.out.println("Человек " + name + " не смог пробежать дистанцию длиной " + length + " м.");
-
+    public int getMaxJump(){
+        return maxJump;
     }
+
+    @Override
+    public void run(int size) {
+        System.out.print ("Человек " + name + " пытается пробежать " + size + " м. ");
+    }
+
+    @Override
+    public int getMaxRun(){
+        return maxRun;
+    }
+
 }

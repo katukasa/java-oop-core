@@ -1,14 +1,12 @@
 package ru.geekbrains.java_core.homework1;
 
-public class Wall {
+public class Wall extends Task{
 
-    int height;
+    int size;
 
-    public Wall(int height){
-        this.height = height;
+    public Wall(int size){
+        super(size);
     }
 
-    public int getWallHeight(int height){
-        return height;
-    }
 }
+

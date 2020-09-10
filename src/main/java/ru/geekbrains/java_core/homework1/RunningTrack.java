@@ -1,14 +1,10 @@
 package ru.geekbrains.java_core.homework1;
 
-public class RunningTrack {
+public class RunningTrack extends Task{
 
-    int length;
+    int size;
 
-    public RunningTrack (int length){
-        this.length = length;
-    }
-
-    public int getRunningTrackLength(int length){
-        return length;
+    public RunningTrack(int size){
+        super(size);
     }
 }
