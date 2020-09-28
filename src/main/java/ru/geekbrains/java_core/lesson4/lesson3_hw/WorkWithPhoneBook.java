@@ -1,4 +1,4 @@
-package ru.geekbrains.java_core.lesson3_hw;
+package ru.geekbrains.java_core.lesson4.lesson3_hw;
 
 public class WorkWithPhoneBook {
     public static void main(String[] args) {

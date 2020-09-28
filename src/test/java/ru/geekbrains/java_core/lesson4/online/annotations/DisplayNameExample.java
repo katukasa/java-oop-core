@@ -1,16 +1,20 @@
-package ru.geekbrains.java_core.lesson4.annotations;
+package ru.geekbrains.java_core.lesson4.online.annotations;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class RepeatedExample {
+@DisplayName("Checking")
 
-    @RepeatedTest(value = 3)
+public class DisplayNameExample {
+
+    @DisplayName("Correct")
+    @Test
     public void checkSumCorrect(){
         Assertions.assertEquals(2,1 + 1);
     }
 
+    @DisplayName("Wrong")
     @Test
     public void checkSumException(){
         Assertions.assertEquals(2,1 + 2);

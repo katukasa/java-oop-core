@@ -1,4 +1,4 @@
-package ru.geekbrains.java_core.lesson4.annotations.befote_and_after;
+package ru.geekbrains.java_core.lesson4.online.annotations.befote_and_after;
 
 import org.junit.jupiter.api.*;
 

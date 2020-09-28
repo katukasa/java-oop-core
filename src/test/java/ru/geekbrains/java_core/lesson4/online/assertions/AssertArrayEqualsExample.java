@@ -1,4 +1,4 @@
-package ru.geekbrains.java_core.lesson4.assertions;
+package ru.geekbrains.java_core.lesson4.online.assertions;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

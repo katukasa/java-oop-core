@@ -1,7 +1,6 @@
-package ru.geekbrains.java_core.lesson4.annotations;
+package ru.geekbrains.java_core.lesson4.online.annotations;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 

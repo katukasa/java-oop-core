@@ -1,8 +1,8 @@
-package ru.geekbrains.java_core.lesson3_hw_test;
+package ru.geekbrains.java_core.lesson4.lesson3_hw_test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ru.geekbrains.java_core.lesson3_hw.PhoneBook;
+import ru.geekbrains.java_core.lesson4.lesson3_hw.PhoneBook;
 
 import java.util.HashSet;
 import java.util.Set;
