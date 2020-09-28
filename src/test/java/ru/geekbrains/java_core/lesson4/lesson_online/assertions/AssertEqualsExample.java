@@ -1,12 +1,11 @@
-package ru.geekbrains.java_core.lesson4.online.annotations;
+package ru.geekbrains.java_core.lesson4.lesson_online.assertions;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
-public class RepeatedExample {
+public class AssertEqualsExample {
 
-    @RepeatedTest(value = 3)
+    @Test
     public void checkSumCorrect(){
         Assertions.assertEquals(2,1 + 1);
     }

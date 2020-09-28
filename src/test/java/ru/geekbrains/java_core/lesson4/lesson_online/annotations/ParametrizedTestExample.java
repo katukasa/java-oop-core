@@ -1,4 +1,4 @@
-package ru.geekbrains.java_core.lesson4.online.annotations;
+package ru.geekbrains.java_core.lesson4.lesson_online.annotations;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

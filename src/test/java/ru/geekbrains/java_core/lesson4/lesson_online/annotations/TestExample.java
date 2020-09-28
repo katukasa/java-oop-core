@@ -1,9 +1,9 @@
-package ru.geekbrains.java_core.lesson4.online.assertions;
+package ru.geekbrains.java_core.lesson4.lesson_online.annotations;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class AssertEqualsExample {
+public class TestExample {
 
     @Test
     public void checkSumCorrect(){

@@ -1,17 +1,16 @@
-package ru.geekbrains.java_core.lesson4.online.annotations;
+package ru.geekbrains.java_core.lesson4.lesson_online.annotations;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
-public class DisabledExample {
+public class RepeatedExample {
 
-    @Test
+    @RepeatedTest(value = 3)
     public void checkSumCorrect(){
         Assertions.assertEquals(2,1 + 1);
     }
 
-    @Disabled(value = "Disabled by 01.10.2020")
     @Test
     public void checkSumException(){
         Assertions.assertEquals(2,1 + 2);
