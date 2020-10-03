@@ -23,8 +23,30 @@
 <!--            <scope>test</scope>-->
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>org.apache.maven.plugins</groupId>-->
+<!--            <artifactId>maven-jar-plugin</artifactId>-->
+<!--            <version>3.2.0</version>-->
+<!--            <type>maven-plugin</type>-->
+<!--        </dependency>-->
+
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <manifest>
+                        <mainClass>ru.geekbrains.java_core.lesson4.lesson3_hw.UniqueWords</mainClass>
+                    </manifest>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
