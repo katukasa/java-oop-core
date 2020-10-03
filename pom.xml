@@ -23,14 +23,6 @@
 <!--            <scope>test</scope>-->
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.apache.maven.plugins</groupId>-->
-<!--            <artifactId>maven-jar-plugin</artifactId>-->
-<!--            <version>3.2.0</version>-->
-<!--            <type>maven-plugin</type>-->
-<!--        </dependency>-->
-
-
     </dependencies>
 
     <build>
@@ -40,11 +32,27 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.2.0</version>
                 <configuration>
-                    <manifest>
-                        <mainClass>ru.geekbrains.java_core.lesson4.lesson3_hw.UniqueWords</mainClass>
-                    </manifest>
+                    <archive>
+                        <manifest>
+                            <mainClass>ru.geekbrains.java_core.lesson4.lesson3_hw.UniqueWords</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <phase>validate</phase>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                </executions>
+
+            </plugin>
+
         </plugins>
     </build>
 
