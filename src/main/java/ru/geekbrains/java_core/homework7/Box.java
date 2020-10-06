@@ -2,13 +2,6 @@ package ru.geekbrains.java_core.homework7;
 
 public class Box<A extends Fruit> {
 
-//    Fruit[] fruits;
-//
-//    public Box(Fruit... fruits){
-//        this.fruits = fruits;
-//    }
-
-    //int boxWeight;
     int amountOfFruits;
     String fruitType;
 
