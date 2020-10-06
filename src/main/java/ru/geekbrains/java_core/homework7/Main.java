@@ -11,21 +11,20 @@ public class Main {
 
         // сравнение веса коробок
         // должно быть можно сравнивать вес коробки с яблоками и вес коробки с апельсинами
-        System.out.println(appleBox1.compareTwoBoxes(appleBox2));
-        System.out.println(orangeBox1.compareTwoBoxes(orangeBox2));
-        System.out.println(appleBox1.compareTwoBoxes(orangeBox1));
+        System.out.println(appleBox1.compareTwoBoxes(appleBox2));   // false
+        System.out.println(orangeBox1.compareTwoBoxes(orangeBox2)); // false
+        System.out.println(appleBox1.compareTwoBoxes(orangeBox1));  // true
 
         // пересыпание фруктов из одной коробки в другую
         orangeBox1.moveFruitToOtherBox(orangeBox2);
-        System.out.println(orangeBox1.amountOfFruits + ", " +  orangeBox2.amountOfFruits);
+        System.out.println(orangeBox1.amountOfFruits + ", " +  orangeBox2.amountOfFruits);  // 0, 5
 
-        // пересыпание фруктов из одной коробки в другую (яблоки и апельсины)
-        // нельзя пересепать яблоки к апельсинам и наоборот - ок
+        // нельзя пересепать яблоки к апельсинам и наоборот - ок, не компилируется
         // orangeBox2.moveFruitToOtherBox(appleBox1);
 
         // добавление одного фрукта в коробку
         appleBox1.addFruitToBox();
-        System.out.println(appleBox1.amountOfFruits);
+        System.out.println(appleBox1.amountOfFruits);   // 4
 
     }
 }
