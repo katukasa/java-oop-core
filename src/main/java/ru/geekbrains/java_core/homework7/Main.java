@@ -19,7 +19,7 @@ public class Main {
         orangeBox1.moveFruitToOtherBox(orangeBox2);
         System.out.println(orangeBox1.amountOfFruits + ", " +  orangeBox2.amountOfFruits);  // 0, 5
 
-        // нельзя пересепать яблоки к апельсинам и наоборот - ок, не компилируется
+        // нельзя пересепать яблоки к апельсинам и наоборот - не компилируется, ok
         // orangeBox2.moveFruitToOtherBox(appleBox1);
 
         // добавление одного фрукта в коробку
