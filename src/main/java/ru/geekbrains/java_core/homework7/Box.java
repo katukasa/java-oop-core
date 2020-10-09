@@ -1,37 +1,35 @@
 package ru.geekbrains.java_core.homework7;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Box<A extends Fruit> {
 
-    int amountOfFruits;
-    String fruitType;
+    List<A> box = new ArrayList<>();
 
-    public Box(int amountOfFruits, String fruitType) {
-        this.amountOfFruits = amountOfFruits;
-        this.fruitType = fruitType;
+    public float getWeight(){
+        float weight = 0.0f;
+        for (A x : box){
+            weight += x.getWeight();
+        }
+        return weight;
     }
 
-    public int getWeight(){
-        int boxWeight = 0;
-        if (fruitType.equals("Apples")){
-            boxWeight = 100 * amountOfFruits;
+    public void addFruit(A fruit, int amount){
+        for (int i = 0; i < amount; i++){
+            box.add(fruit);
         }
-        if (fruitType.equals("Oranges")){
-            boxWeight = 150 * amountOfFruits;
-        }
-        return boxWeight;
     }
 
-    public boolean compareTwoBoxes(Box<?> otherBox){
+    public boolean compare(Box<?> otherBox){
         return getWeight() == otherBox.getWeight();
     }
 
-    public void moveFruitToOtherBox(Box<A> otherBox){
-        otherBox.amountOfFruits = otherBox.amountOfFruits + amountOfFruits;
-        amountOfFruits = 0;
+    public void pour(Box<A> destination){
+        destination.box.addAll(this.box);
+        this.box.clear();
     }
 
-    public void addFruitToBox(){
-        amountOfFruits++;
-    }
+
 
 }

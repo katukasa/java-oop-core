@@ -1,7 +1,10 @@
 package ru.geekbrains.java_core.homework7;
 
-public class Apple extends Fruit {
+public class Apple implements Fruit {
 
-    public Apple() {
+    @Override
+    public float getWeight(){
+        return 1.0f;
     }
+
 }

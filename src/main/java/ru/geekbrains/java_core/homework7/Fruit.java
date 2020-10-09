@@ -1,7 +1,5 @@
 package ru.geekbrains.java_core.homework7;
 
-public class Fruit {
-
-    public Fruit() {
-    }
+public interface Fruit {
+  float getWeight();
 }
